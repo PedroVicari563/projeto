@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     color: #201e1e;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: rgb(247, 44, 78);
-    color: #ffffff;
+    background-color: #ff6961;
+    color: #1b1b1b;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -24,28 +25,32 @@ a {
     transition: transform 0.3s ease, color 0.3s ease;
 
 }
-.p{
-    font-family:Arial, Helvetica, sans-serif;
-    color: #fdf6f6;
+
+.p {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1b1b1b;
 
 
 }
-li{
-    font-family: Arial, sans-serif;
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #ffffff;
-    margin-bottom: 12px; 
+    color: #1b1b1b;
+    margin-bottom: 12px;
     text-align: left;
 
 }
-ul{
+
+ul {
     list-style-type: disc;
     padding-left: 24px;
     margin: 0;
 }
+
 .cabeçalho-A {
-    background-color: rgb(99, 108, 240);
+    background-color:#BFE8BE;
     color: #ffffff;
     padding: 15px 30px;
     box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
@@ -69,21 +74,26 @@ ul{
 
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 140px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   
+
 }
 
 .logo-A {
-    color: pink;
-    text-decoration: none;
-    font-size: 185px;
-    font-weight: bold;
-
+    display: flex;
+    align-items: center;
 }
+
+.logo-A img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 .nav-b ul {
     list-style: none;
@@ -124,10 +134,10 @@ body {
 
 
 .catalogo-container {
-    background-color: rgb(84, 84, 252);
+     background-color:#BFE8BE;
     max-width: 850px;
     margin: 20px auto;
-    width:100%;
+    width: 100%;
     min-height: auto;
     padding: 30px 20px;
     display: flex;
@@ -160,7 +170,7 @@ img {
 }
 
 .produtos-card {
-    background-color: #eeebeb;
+    background-color:#fdfdfd;
     padding: 10px;
     border-radius: 15px;
     display: flex;
@@ -191,13 +201,13 @@ img {
 
 .produtos-card h3 {
     font-size: 18px;
-    color: #333333;
-    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 button.botao-comprar {
-    background-color: rgb(247, 44, 78);
+    background-color: #ff6961;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -209,7 +219,7 @@ button.botao-comprar {
 }
 
 button.botao-comprar:hover {
-    background-color: rgb(220, 30, 60);
+    background-color: #ff6961;
     transform: scale(1.1);
 }
 
@@ -247,10 +257,10 @@ button.botao-comprar:hover {
 }
 
 .rodape {
-    background-color: rgb(84, 84, 252);
+    background-color:  #BFE8BE;
     color: #ffffff;
     max-width: 850px;
-    width:100%;
+    width: 100%;
     margin: auto auto 20px auto;
     padding: 20px;
     border-radius: 30px;
@@ -261,11 +271,11 @@ button.botao-comprar:hover {
 
 }
 
-.form-a{
-    background-color: rgb(247, 44, 78);
+.form-a {
+    background-color: #ff6961;
     max-width: 350px;
     margin: 20px auto;
-    width:100%;
+    width: 100%;
     min-height: auto;
     padding: 10px 20px;
     display: flex;
@@ -275,9 +285,48 @@ button.botao-comprar:hover {
     border-radius: 30px;
 
 }
-.label-a{
-    font-family:'Times New Roman', Times, serif;;
-    font-style:oblique;
+
+.form-a label {
+    color: #201e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.form-a input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-a input:focus {
+    border-color: rgb(247, 44, 78);
+    box-shadow: 0 0 0 3px rgba(247, 44, 78, 0.15);
+}
+
+.form-a button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(247, 44, 78);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-a button:hover {
+    background: rgb(220, 30, 60);
+    transform: scale(1.03);
+}
+
+.label-a {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
 
 }
 
@@ -285,21 +334,23 @@ main {
     width: 90%;
     max-width: 850px;
     margin: 20px auto;
-    padding: 25px; 
-    background-color: rgb(84, 84, 252);
-    border-radius: 30px; 
+    padding: 25px;
+    background-color:#BFE8BE;
+    border-radius: 30px;
 }
-  
-main > h1, main > p, .dicas {
+
+main>h1,
+main>p,
+.dicas {
     margin: 10px;
     padding: 5px;
 }
 
 .container-video {
     width: 100%;
-    margin: 0; 
+    margin: 0;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -315,7 +366,7 @@ main > h1, main > p, .dicas {
 }
 
 .box-video {
-    width: 240px;  
+    width: 240px;
     height: 420px;
     border-radius: 10px;
     overflow: hidden;
@@ -331,11 +382,27 @@ main > h1, main > p, .dicas {
 
 .text {
     flex: 1;
-    min-width: 220px; 
+    min-width: 220px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-weight: bold;
     color: rgb(192, 24, 24);
     margin: 0;
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #000000;
+}
+
+.catalogo-container h2,
+.produtos-card h3 {
+    color: #000000;
+}
+
+.container-video .text {
+    color: rgb(192, 24, 24);
 }
