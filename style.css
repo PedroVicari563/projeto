@@ -24,7 +24,26 @@ a {
     transition: transform 0.3s ease, color 0.3s ease;
 
 }
+.p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fdf6f6;
 
+
+}
+li{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 12px; 
+    text-align: left;
+
+}
+ul{
+    list-style-type: disc;
+    padding-left: 24px;
+    margin: 0;
+}
 .cabeçalho-A {
     background-color: rgb(99, 108, 240);
     color: #ffffff;
@@ -52,6 +71,10 @@ a {
 body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
 }
 
 .logo-A {
@@ -77,14 +100,15 @@ body {
     color: pink;
     text-decoration: none;
     font-size: 20px;
-  
+
 }
 
 .nav-b:hover {
     color: pink;
-    
+
 
 }
+
 .nav-b a {
     color: rgb(245, 245, 245);
     text-decoration: none;
@@ -103,10 +127,12 @@ body {
     background-color: rgb(84, 84, 252);
     max-width: 850px;
     margin: 20px auto;
+    width:100%;
     min-height: auto;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+    animation: fade2 1s ease-out forwards;
     align-items: center;
     border-radius: 30px;
 
@@ -218,4 +244,98 @@ button.botao-comprar:hover {
     to {
         opacity: 1;
     }
+}
+
+.rodape {
+    background-color: rgb(84, 84, 252);
+    color: #ffffff;
+    max-width: 850px;
+    width:100%;
+    margin: auto auto 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 14px;
+    animation: fade2 1s ease-out forwards;
+
+
+}
+
+.form-a{
+    background-color: rgb(247, 44, 78);
+    max-width: 350px;
+    margin: 20px auto;
+    width:100%;
+    min-height: auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    animation: fade2 1s ease-out forwards;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.label-a{
+    font-family:'Times New Roman', Times, serif;;
+    font-style:oblique;
+
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 25px; 
+    background-color: rgb(84, 84, 252);
+    border-radius: 30px; 
+}
+  
+main > h1, main > p, .dicas {
+    margin: 10px;
+    padding: 5px;
+}
+
+.container-video {
+    width: 100%;
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #fdf6f6;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url("planFundoInicio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-video {
+    width: 240px;  
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.box-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text {
+    flex: 1;
+    min-width: 220px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: bold;
+    color: rgb(192, 24, 24);
+    margin: 0;
+    text-align: center;
 }
